@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --textsize1 : 1.4rem;
+    --textsize2 : 1rem;
+    --backcolor : rgba(172, 171, 171, 0.2);
+}
+
+
 html, body{
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -9,7 +16,7 @@ html, body{
 
 #content{
     display: flex;
-    background-color: rgba(172, 171, 171, 0.2);
+    background-color: var(--backcolor);
 }
 
 #background{
@@ -20,7 +27,7 @@ html, body{
 
 .content{
     padding: 10rem 0;
-    font-size: 1.4em;
+    font-size: var(--textsize1);
     font-weight: 600;
 }
 
@@ -77,7 +84,7 @@ input{
 
 
 #confirm{
-    font-size: 1rem;
+    font-size: var(--textsize2);
 
 }
 
@@ -89,4 +96,5 @@ input{
     font-weight: 400;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
 }
