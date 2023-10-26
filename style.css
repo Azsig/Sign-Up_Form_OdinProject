@@ -82,6 +82,11 @@ input{
     height: 1.05rem;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
 
 #confirm{
     font-size: var(--textsize2);
@@ -97,4 +102,20 @@ input{
     color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+
+input:valid{
+    border: 2px solid green;
+}
+
+input:focus{
+    border: 2px solid blue;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid #ee2828;
+}
+
+.invalid-input{
+    border: 2px solid red;
 }

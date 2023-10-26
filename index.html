@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div id="content">
@@ -31,7 +32,7 @@
                                 <label for="first_name">First Name:</label>
                             </div>
                             <div>
-                                <input type="text" id="first_name" required>
+                                <input required type="text" id="first_name" placeholder=" ">
                             </div>
                         </div>
                         <div>
@@ -39,7 +40,7 @@
                                 <label for="last_name">Last Name:</label>
                             </div>
                             <div>
-                                <input type="text" id="last_name" required>
+                                <input required type="text" id="last_name" placeholder=" ">
                             </div>
                         </div>
                         <div>
@@ -47,7 +48,7 @@
                                 <label for="email">Email</label>
                             </div>
                             <div>
-                                <input type="text" id="email" required>
+                                <input required type="email" id="email" placeholder=" ">
                             </div>
                         </div>
                         <div>
@@ -55,7 +56,7 @@
                                 <label for="number">Phone Number</label>
                             </div>
                             <div>
-                                <input type="number" id="number" required>
+                                <input required type="number" id="number" placeholder=" ">
                             </div>
                         </div>
                         <div>
@@ -63,7 +64,7 @@
                                 <label for="password">Password:</label>
                             </div>
                             <div>
-                                <input type="password" id="password" required>
+                                <input required type="password" id="password" placeholder=" ">
                             </div>
                         </div>
                         <div>
@@ -71,7 +72,8 @@
                                 <label for="cpass">Confirm Password:</label>
                             </div>
                             <div>
-                                <input type="password" id="cpass" required>
+                                <input required type="password" id="cpass" placeholder=" ">
+                                <p id="pass-error"></p>
                             </div>
                         </div>
                     </div>
@@ -86,6 +88,7 @@
         </form>
         
     </div>
+    <script src="script.js"></script>
     
 </body>
 </html>
