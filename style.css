@@ -74,6 +74,8 @@ html, body{
     width: 65rem;
     min-width: 300px;
     min-height: 20rem;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -120,3 +122,8 @@ input:invalid:not(:focus):not(:placeholder-shown) {
     border: 2px solid red;
 }
 
+#discl {
+    position: relative;
+    margin: auto;
+    top: 24rem;
+}
